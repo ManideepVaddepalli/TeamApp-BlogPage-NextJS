@@ -9,7 +9,7 @@ export default function BlogCard(props) {
       </div>
       <div className="blog-card-text-container">
         <h2>
-          <a href={`/blog/${props.id}`}>{props.heading}</a>
+          <a href={`./blog/${props.id}`}>{props.heading}</a>
         </h2>
         <p>{props.para}</p>
         <div className="blog-user-card">

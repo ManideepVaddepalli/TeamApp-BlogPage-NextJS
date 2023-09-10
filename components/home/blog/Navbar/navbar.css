@@ -258,6 +258,10 @@ body {
 .header-nav-menu {
   display: none;
 }
+.navigation-bar > ul > li > a {
+  text-decoration: none;
+  color: var(--off-white);
+}
 .hero-email-input-container > p {
   text-align: center;
   border-radius: 0.5em;

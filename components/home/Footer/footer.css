@@ -63,6 +63,10 @@
   font-size: var(--footer-para-font-size);
   color: var(--off-white);
 }
+.footer-common > ul > li > a {
+  text-decoration: none;
+  color: var(--off-white);
+}
 .blog-link {
   text-decoration: none;
   color: var(--off-white);

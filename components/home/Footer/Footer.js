@@ -70,7 +70,9 @@ export default function Footer() {
               <h4>Company</h4>
               <ul>
                 <li>Product</li>
-                <li>Blog</li>
+                <li>
+                  <a href="./blog">Blog</a>
+                </li>
                 <li>Support</li>
               </ul>
             </div>
