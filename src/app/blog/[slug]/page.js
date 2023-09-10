@@ -10,7 +10,6 @@ import { notFound } from "next/navigation";
 const totalData = data.concat(data1);
 
 export default function BlogIndividual({ params }) {
-  console.log(params);
   let filteredData = totalData.filter((Elem) => Elem.id == params.slug);
   if (filteredData[0]) {
     return (
@@ -21,7 +20,7 @@ export default function BlogIndividual({ params }) {
       </>
     );
   } else {
-    notFound();
+    <h1>Not found</h1>;
   }
 }
 export async function getStaticPath() {
@@ -36,4 +35,10 @@ export async function getStaticPath() {
     paths: allPaths,
     fallback: false,
   };
+}
+
+export async function generateStaticParams() {
+  return allData.map((Elem) => ({
+    slug: Elem.toString(),
+  }));
 }
