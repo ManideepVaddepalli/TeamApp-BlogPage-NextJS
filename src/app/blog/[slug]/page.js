@@ -10,8 +10,8 @@ import { notFound } from "next/navigation";
 const totalData = data.concat(data1);
 
 export default function BlogIndividual({ params }) {
+  console.log(params);
   let filteredData = totalData.filter((Elem) => Elem.id == params.slug);
-  console.log(filteredData[0]);
   if (filteredData[0]) {
     return (
       <>
@@ -24,16 +24,16 @@ export default function BlogIndividual({ params }) {
     notFound();
   }
 }
-// export async function getStaticPath() {
-//   let allPaths = allData.map((Elem) => {
-//     return {
-//       params: {
-//         slug: Elem.id.toString(),
-//       },
-//     };
-//   });
-//   return {
-//     paths: allPaths,
-//     fallback: false,
-//   };
-// }
+export async function getStaticPath() {
+  let allPaths = allData.map((Elem) => {
+    return {
+      params: {
+        slug: Elem.id.toString(),
+      },
+    };
+  });
+  return {
+    paths: allPaths,
+    fallback: false,
+  };
+}

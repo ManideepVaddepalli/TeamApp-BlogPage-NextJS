@@ -7,7 +7,6 @@ const totalData = data.concat(data1);
 
 export default function IndividualBlog(props) {
   let filteredData = totalData.filter((Elem) => Elem.id == props.id);
-  console.log(filteredData);
   return (
     <div className="individual-blog-total-content">
       <div className="blog-top-text-content">
