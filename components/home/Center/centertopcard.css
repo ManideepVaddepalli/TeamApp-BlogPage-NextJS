@@ -1,0 +1,49 @@
+.center-top-card {
+  padding: var(--hero-padding);
+  font-family: "Lexend Deca", sans-serif;
+  margin: 50px 0px;
+}
+.center-top-card > Image {
+  aspect-ratio: 1616/1312;
+  height: 75vh;
+}
+.center-top-card-text-content {
+  max-width: 1000px;
+  color: var(--dark-blue);
+}
+.center-top-card-heading {
+  margin: 0.75em 0px;
+  font-size: var(--hero-heading-font-size);
+}
+.center-top-card-para {
+  color: var(--dark-blue);
+  margin-bottom: 3em;
+  font-size: var(--hero-paragraph-font-size);
+}
+.center-top-card-learnmore {
+  font-family: "Lexend Deca", sans-serif;
+  color: #5468e7;
+  display: flex;
+  align-items: center;
+  font-size: var(--hero-paragraph-font-size);
+  text-decoration: underline;
+}
+.center-top-card-learnmore > span {
+  margin: 3px 0px 0px 10px;
+  height: 42px;
+  aspect-ratio: 1/1;
+  background-image: url("../Images/Right-arrow-icon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (min-width: 1201px) {
+  .center-top-card {
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    flex-direction: row-reverse;
+  }
+  .center-top-card-text-content {
+    width: 40vw;
+  }
+}

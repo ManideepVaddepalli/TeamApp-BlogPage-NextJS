@@ -1,0 +1,60 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+.total-content {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+body {
+  font-family: "Lexend Deca", sans-serif;
+}
+:root {
+  /* ----------------Color-variables---------------------- */
+  --off-white: #f5f5f5;
+  --soft-blue: #5468e7;
+  --dark-blue: #232340;
+  --desaturated-blue: #7676b2;
+  /* ------------------nav button variables---------------------- */
+  /* --nav-button-size: 40px; */
+  --nav-button-size: clamp(1.25rem, 0.682rem + 6.061vw, 2.5rem);
+  /* --Nav-button-right: 50px; */
+  --Nav-button-right: clamp(0.313rem, -0.966rem + 13.636vw, 3.125rem);
+
+  /* --------------------hero content variables--------------- */
+  /* --hero-padding: 50px; */
+  --hero-padding: clamp(0.313rem, -0.966rem + 13.636vw, 3.125rem);
+  /* ------------------nav menu variables---------------- */
+  /* --navigation-list-items-font-size: 20px; */
+  --navigation-list-items-font-size: clamp(0.5rem, 0.159rem + 3.636vw, 1.25rem);
+  --navigation-menu-mobile-bg-color: rgba(0, 0, 0, 0.616);
+  /* ----------------logo variables--------------------- */
+  /* --font-size-mobile-logo: 82px; */
+  --font-size-mobile-logo: clamp(1.25rem, -0.511rem + 18.788vw, 5.125rem);
+  /* --font-size-mobile-logoDot: 96px; */
+  --font-size-mobile-logoDot: clamp(1.75rem, -0.182rem + 20.606vw, 6rem);
+  /* --logo-padding-bottom: 14px; */
+  --logo-padding-bottom: clamp(0.5rem, 0.33rem + 1.818vw, 0.875rem);
+
+  /* ----------------hero section heading-------------------- */
+  /* --hero-heading-font-size: 52px; */
+  --hero-heading-font-size: clamp(1.125rem, 0.159rem + 10.303vw, 3.25rem);
+  /* --hero-paragraph-font-size: 24px; */
+  --hero-paragraph-font-size: clamp(0.688rem, 0.318rem + 3.939vw, 1.5rem);
+  /* --------------------hero section emailbox--------------------- */
+  /* --hero-email-font-size: 20px; */
+  --hero-email-font-size: clamp(0.5rem, 0.159rem + 3.636vw, 1.25rem);
+}
+.total-content {
+  scroll-behavior: smooth;
+}

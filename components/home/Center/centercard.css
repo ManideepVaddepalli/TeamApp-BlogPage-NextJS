@@ -1,0 +1,95 @@
+:root {
+  --center-card-heading-font-size: 36px;
+  --center-card-para-font-size: 20px;
+}
+.centersection-card-container {
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 100px 0px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Lexend Deca", sans-serif;
+}
+.centercard-image-container {
+  overflow: hidden;
+  width: 90vw;
+  aspect-ratio: 1/1;
+}
+.centercard-image-container > Image {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.centercard-text-section {
+  padding: 0px var(--hero-padding) 0px var(--hero-padding);
+}
+.centercard-text-heading {
+  margin: 1.25em 0px 0.75em 0px;
+  color: var(--dark-blue);
+  font-size: var(--center-card-heading-font-size);
+}
+.centercard-text-paragraph {
+  margin-bottom: 3em;
+  color: var(--dark-blue);
+  font-size: var(--center-card-para-font-size);
+}
+.center-last-section {
+  width: 100%;
+  padding: var(--hero-padding);
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--dark-blue);
+}
+.center-last-section > h1 {
+  width: 100%;
+  text-align: center;
+  font-size: var(--hero-heading-font-size);
+}
+@media (min-width: 481px) and (max-width: 1200px) {
+  .centersection-card-container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .centercard-text-section {
+    /* padding-right: 10px; */
+    padding: 0px clamp(0.625rem, -1.047rem + 5.563vw, 3.125rem);
+    width: 50%;
+  }
+  .centercard-image-container {
+    overflow: hidden;
+    width: 50%;
+    aspect-ratio: auto;
+  }
+  .centercard-image-container > img {
+    width: auto;
+    aspect-ratio: auto;
+  }
+  .reverse {
+    flex-direction: row-reverse;
+  }
+}
+@media (min-width: 1201px) {
+  .centersection-card-container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .centercard-text-section {
+    padding: 0px clamp(0.625rem, -1.047rem + 5.563vw, 3.125rem);
+    width: 50%;
+  }
+  .centercard-image-container {
+    overflow: hidden;
+    width: 50%;
+    aspect-ratio: auto;
+  }
+  .centercard-image-container > img {
+    width: 100%;
+    aspect-ratio: auto;
+  }
+  .reverse {
+    flex-direction: row-reverse;
+  }
+  .center-cards-container {
+    padding: 0px var(--hero-padding);
+  }
+}
