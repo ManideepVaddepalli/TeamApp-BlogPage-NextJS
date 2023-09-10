@@ -24,17 +24,16 @@ export default function BlogIndividual({ params }) {
     notFound();
   }
 }
-export async function getStaticPath() {
-  let allPaths = allData.map((Elem) => {
-    return {
-      params: {
-        slug: Elem.id.toString(),
-      },
-    };
-  });
-  console.log(allPaths);
-  return {
-    paths: allPaths,
-    fallback: false,
-  };
-}
+// export async function getStaticPath() {
+//   let allPaths = allData.map((Elem) => {
+//     return {
+//       params: {
+//         slug: Elem.id.toString(),
+//       },
+//     };
+//   });
+//   return {
+//     paths: allPaths,
+//     fallback: false,
+//   };
+// }

@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function BlogCard(props) {
   return (
@@ -9,7 +10,7 @@ export default function BlogCard(props) {
       </div>
       <div className="blog-card-text-container">
         <h2>
-          <a href={`./blog/${props.id}`}>{props.heading}</a>
+          <Link href={`./blog/${props.id}`}>{props.heading}</Link>
         </h2>
         <p>{props.para}</p>
         <div className="blog-user-card">
