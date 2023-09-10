@@ -1,9 +1,12 @@
 {
+  "homepage": "http://manideepvaddepalli.github.io/TeamApp-BlogPage-NextJS",
   "name": "test",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "predeploy": "npm run bulid",
+    "deploy": "gh-pages -d next",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -14,5 +17,8 @@
     "next": "13.4.19",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }
