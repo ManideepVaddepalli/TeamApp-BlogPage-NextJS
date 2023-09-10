@@ -5,9 +5,6 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  assetPrefix: isProd
-    ? "https://cdn.statically.io/gh/NaveenDA/naveenda.github.io/gh-pages/"
-    : "",
 };
 
 module.exports = nextConfig;
