@@ -6,7 +6,7 @@ import centertopImage from "../Images/centerTopMockup.png";
 function CenterTopSection() {
   return (
     <div className="center-top-card">
-      <Image src={centertopImage} />
+      <Image src={centertopImage} alt="center-top" />
       <div className="center-top-card-text-content">
         <h1 className="center-top-card-heading">
           Chats for your distributed teams

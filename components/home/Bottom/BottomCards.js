@@ -10,6 +10,7 @@ export default function BottomCards() {
   let ratingCardElems = ratingData.map((Elem) => {
     return (
       <RatingCards
+        key={Elem.name}
         rating={Elem.rating}
         para={Elem.para}
         img={Elem.img}

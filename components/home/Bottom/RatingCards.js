@@ -10,111 +10,111 @@ export default function RatingCards(props) {
     if (props.rating === 5) {
       ratingElem = (
         <div className="rating-stars">
-          <Image src={fullStar} />
-          <Image src={fullStar} />
-          <Image src={fullStar} />
-          <Image src={fullStar} />
-          <Image src={fullStar} />
+          <Image alt="star" src={fullStar} />
+          <Image alt="star" src={fullStar} />
+          <Image alt="star" src={fullStar} />
+          <Image alt="star" src={fullStar} />
+          <Image alt="star" src={fullStar} />
         </div>
       );
     } else if (props.rating === 4.5) {
       ratingElem = (
         <div className="rating-stars">
-          <Image src={fullStar} />
-          <Image src={fullStar} />
-          <Image src={fullStar} />
-          <Image src={fullStar} />
-          <Image src={halfStar} />
+          <Image alt="star" src={fullStar} />
+          <Image alt="star" src={fullStar} />
+          <Image alt="star" src={fullStar} />
+          <Image alt="star" src={fullStar} />
+          <Image alt="star" src={halfStar} />
         </div>
       );
     } else if (props.rating === 4) {
       ratingElem = (
         <div className="rating-stars">
-          <Image src={fullStar} />
-          <Image src={fullStar} />
-          <Image src={fullStar} />
-          <Image src={fullStar} />
-          <Image src={emptyStar} />
+          <Image alt="star" src={fullStar} />
+          <Image alt="star" src={fullStar} />
+          <Image alt="star" src={fullStar} />
+          <Image alt="star" src={fullStar} />
+          <Image alt="star" src={emptyStar} />
         </div>
       );
     } else if (props.rating === 3.5) {
       ratingElem = (
         <div className="rating-stars">
-          <Image src={fullStar} />
-          <Image src={fullStar} />
-          <Image src={fullStar} />
-          <Image src={halfStar} />
-          <Image src={emptyStar} />
+          <Image alt="star" src={fullStar} />
+          <Image alt="star" src={fullStar} />
+          <Image alt="star" src={fullStar} />
+          <Image alt="star" src={halfStar} />
+          <Image alt="star" src={emptyStar} />
         </div>
       );
     } else if (props.rating === 3) {
       ratingElem = (
         <div className="rating-stars">
-          <Image src={fullStar} />
-          <Image src={fullStar} />
-          <Image src={fullStar} />
-          <Image src={emptyStar} />
-          <Image src={emptyStar} />
+          <Image alt="star" src={fullStar} />
+          <Image alt="star" src={fullStar} />
+          <Image alt="star" src={fullStar} />
+          <Image alt="star" src={emptyStar} />
+          <Image alt="star" src={emptyStar} />
         </div>
       );
     } else if (props.rating === 2.5) {
       ratingElem = (
         <div className="rating-stars">
-          <Image src={fullStar} />
-          <Image src={fullStar} />
-          <Image src={halfStar} />
-          <Image src={emptyStar} />
-          <Image src={emptyStar} />
+          <Image alt="star" src={fullStar} />
+          <Image alt="star" src={fullStar} />
+          <Image alt="star" src={halfStar} />
+          <Image alt="star" src={emptyStar} />
+          <Image alt="star" src={emptyStar} />
         </div>
       );
     } else if (props.rating === 2) {
       ratingElem = (
         <div className="rating-stars">
-          <Image src={fullStar} />
-          <Image src={fullStar} />
-          <Image src={emptyStar} />
-          <Image src={emptyStar} />
-          <Image src={emptyStar} />
+          <Image alt="star" src={fullStar} />
+          <Image alt="star" src={fullStar} />
+          <Image alt="star" src={emptyStar} />
+          <Image alt="star" src={emptyStar} />
+          <Image alt="star" src={emptyStar} />
         </div>
       );
     } else if (props.rating === 1.5) {
       ratingElem = (
         <div className="rating-stars">
-          <Image src={fullStar} />
-          <Image src={halfStar} />
-          <Image src={emptyStar} />
-          <Image src={emptyStar} />
-          <Image src={emptyStar} />
+          <Image alt="star" src={fullStar} />
+          <Image alt="star" src={halfStar} />
+          <Image alt="star" src={emptyStar} />
+          <Image alt="star" src={emptyStar} />
+          <Image alt="star" src={emptyStar} />
         </div>
       );
     } else if (props.rating === 1) {
       ratingElem = (
         <div className="rating-stars">
-          <Image src={fullStar} />
-          <Image src={emptyStar} />
-          <Image src={emptyStar} />
-          <Image src={emptyStar} />
-          <Image src={emptyStar} />
+          <Image alt="star" src={fullStar} />
+          <Image alt="star" src={emptyStar} />
+          <Image alt="star" src={emptyStar} />
+          <Image alt="star" src={emptyStar} />
+          <Image alt="star" src={emptyStar} />
         </div>
       );
     } else if (props.rating === 0.5) {
       ratingElem = (
         <div className="rating-stars">
-          <Image src={halfStar} />
-          <Image src={emptyStar} />
-          <Image src={emptyStar} />
-          <Image src={emptyStar} />
-          <Image src={emptyStar} />
+          <Image alt="star" src={halfStar} />
+          <Image alt="star" src={emptyStar} />
+          <Image alt="star" src={emptyStar} />
+          <Image alt="star" src={emptyStar} />
+          <Image alt="star" src={emptyStar} />
         </div>
       );
     } else {
       ratingElem = (
         <div className="rating-stars">
-          <Image src={emptyStar} />
-          <Image src={emptyStar} />
-          <Image src={emptyStar} />
-          <Image src={emptyStar} />
-          <Image src={emptyStar} />
+          <Image alt="star" src={emptyStar} />
+          <Image alt="star" src={emptyStar} />
+          <Image alt="star" src={emptyStar} />
+          <Image alt="star" src={emptyStar} />
+          <Image alt="star" src={emptyStar} />
         </div>
       );
     }
@@ -126,7 +126,7 @@ export default function RatingCards(props) {
       <p>{props.para}</p>
       <div className="rating-user-section">
         <div className="rating-user-avatar">
-          <Image src={props.img} width="56" height="56" />
+          <Image alt={props.name} src={props.img} width="56" height="56" />
         </div>
         <div className="rating-user-text">
           <h4>{props.name}</h4>
