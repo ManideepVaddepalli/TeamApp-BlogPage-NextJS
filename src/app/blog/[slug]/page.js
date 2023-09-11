@@ -22,7 +22,7 @@ export default function BlogIndividual({ params }) {
   }
 }
 export function getStaticPath() {
-  let paths = allData.map((Elem) => {
+  let paths = totalData.map((Elem) => {
     return {
       params: {
         slug: Elem.id.toString(),
