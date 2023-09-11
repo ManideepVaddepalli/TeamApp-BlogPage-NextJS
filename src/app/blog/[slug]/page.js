@@ -12,16 +12,17 @@ export default function BlogIndividual({ params }) {
   if (filteredData[0]) {
     return (
       <>
-        <Navbar />
+        <h1>Working params : {params.slug}</h1>
+        {/* <Navbar />
         <IndividualBlog id={params.slug} />
-        <Footer />
+        <Footer /> */}
       </>
     );
   } else {
     <h1>Not found</h1>;
   }
 }
-export async function getStaticPath() {
+export function getStaticPath() {
   let paths = allData.map((Elem) => {
     return {
       params: {
@@ -35,7 +36,7 @@ export async function getStaticPath() {
   };
 }
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   let mappedData = totalData.map((Elem) => {
     return { slug: Elem.toString() };
   });
