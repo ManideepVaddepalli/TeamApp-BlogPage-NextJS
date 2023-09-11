@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import data from "../../../../components/home/blog/CenterContent/Blogdata";
 import data1 from "../../../../components/home/blog/CenterContent/Blogdata2";
@@ -33,12 +31,13 @@ export async function getStaticPath() {
   });
   return {
     paths: allPaths,
-    fallback: false,
+    fallback: "blocking",
   };
 }
 
 export async function generateStaticParams() {
-  return allData.map((Elem) => ({
-    slug: Elem.toString(),
-  }));
+  let mappedData = totalData.map((Elem) => {
+    return { slug: Elem.toString() };
+  });
+  return mappedData;
 }
