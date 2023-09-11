@@ -1,4 +1,3 @@
-import Footer from "../../components/home/Footer/Footer";
 import "./globals.css";
 import { Inter } from "next/font/google";
 

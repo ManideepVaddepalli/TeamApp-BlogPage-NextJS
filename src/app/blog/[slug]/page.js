@@ -1,10 +1,10 @@
 import React from "react";
-import data from "../../../../components/home/blog/CenterContent/Blogdata";
-import data1 from "../../../../components/home/blog/CenterContent/Blogdata2";
-import Navbar from "../../../../components/home/blog/Navbar/Navbar";
-import Footer from "../../../../components/home/Footer/Footer";
-import IndividualBlog from "../../../../components/home/IndividualBlog/IndividualBlog";
+import data from "@/components/home/blog/CenterContent/Blogdata";
+import data1 from "@/components/home/blog/CenterContent/Blogdata2";
 import { notFound } from "next/navigation";
+import Navbar from "@/components/home/blog/Navbar/Navbar";
+import IndividualBlog from "@/components/home/IndividualBlog/IndividualBlog";
+import Footer from "@/components/home/Footer/Footer";
 const totalData = data.concat(data1);
 
 export default function BlogIndividual({ params }) {
@@ -22,7 +22,7 @@ export default function BlogIndividual({ params }) {
   }
 }
 export async function getStaticPath() {
-  let allPaths = allData.map((Elem) => {
+  let paths = allData.map((Elem) => {
     return {
       params: {
         slug: Elem.id.toString(),
@@ -30,8 +30,8 @@ export async function getStaticPath() {
     };
   });
   return {
-    paths: allPaths,
-    fallback: "blocking",
+    paths,
+    fallback: true,
   };
 }
 
