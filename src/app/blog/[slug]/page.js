@@ -12,14 +12,13 @@ export default function BlogIndividual({ params }) {
   if (filteredData[0]) {
     return (
       <>
-        <h1>Working params : {params.slug}</h1>
-        {/* <Navbar />
+        <Navbar />
         <IndividualBlog id={params.slug} />
-        <Footer /> */}
+        <Footer />
       </>
     );
   } else {
-    <h1>Not found</h1>;
+    notFound();
   }
 }
 export function getStaticPath() {
