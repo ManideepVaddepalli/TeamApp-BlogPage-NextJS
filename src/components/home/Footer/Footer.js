@@ -71,7 +71,7 @@ export default function Footer() {
               <ul>
                 <li>Product</li>
                 <li>
-                  <a href="./blog">Blog</a>
+                  <a href="/blog">Blog</a>
                 </li>
                 <li>Support</li>
               </ul>
