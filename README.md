@@ -1,3 +1,7 @@
-Deployed in Vercel /n
+**Deployed in Vercel**
+
+
 Built the project using Next JS
-https://teamappnextjs.vercel.app/
+
+
+🔗      https://teamappnextjs.vercel.app/
