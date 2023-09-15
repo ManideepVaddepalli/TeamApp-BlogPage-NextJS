@@ -1,1 +1,3 @@
-https://manideepvaddepalli.github.io/TeamApp-BlogPage-NextJS
+Deployed in Vercel
+Built the project using Next JS
+https://teamappnextjs.vercel.app/
